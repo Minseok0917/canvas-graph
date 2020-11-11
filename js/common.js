@@ -1,8 +1,6 @@
 const create = element => document.createElement(element);
-
 const random = (max,min) => Math.floor( Math.random()*(max-min) )+min;
 
-// const se = randomAll(random(20,10),10000,500);
 function randomAll(count,max,min){
 	let array = [];
 	for(let i=0; i<count; i++){
@@ -11,6 +9,24 @@ function randomAll(count,max,min){
 	return array;
 }
 
+
+function createGrape(){
+	this.canvas = create("canvas");
+	this.ctx = canvas.getContext("2d");
+
+}
+// createGrape.prototype.clear = function(){
+	// this.ctx.clearRect(0,0)
+// }
+createGrape.prototype.bar = function(){
+
+}
+createGrape.prototype.line = function(){
+
+}
+createGrape.prototype.pi = function(){
+
+}
 
 function NewGrape(){
 	const canvas = create("canvas");
